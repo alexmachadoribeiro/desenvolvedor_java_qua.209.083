@@ -1,5 +1,7 @@
 # Repositório da turma QUA.209.083 do curso Desenvolvedor Java Noturno do SENAI
 
+**Obs:** entrar nas configurações do VSCode, pesquisar por "*inlayhint*", e alterar para `OffUnlessPressed`.
+
 ## Instruções para setar suas credenciais no Git
 
 1. Execute o comando `git config --list` para verificar se existem alguém com as credenciais setadas.
