@@ -11,10 +11,8 @@ public class App {
         double x;
         double y;
         double resultado = 0.0;
-        int opcao = 0;
         String operacao;
 
-        // FIXME: loop
         do {
             // menu
             System.out.println("1 - Soma");
@@ -27,12 +25,14 @@ public class App {
             System.out.println("Informe a opção desejada:");
             operacao = leia.nextLine();
 
-            if (operacao != "7") {
+            if (!operacao.equals("7")) {
                 // entrada de dados
                 System.out.println("Informe o valor de x:");
                 x = leia.nextDouble();
                 System.out.println("Informe o valor de y:");
                 y = leia.nextDouble();
+                
+                leia.nextLine();
 
                 switch (operacao) {
                     case "1":
@@ -59,14 +59,8 @@ public class App {
                 // mostra o resultado
                 System.out.println("Resultado: " + resultado);
             }
-            else {
-                opcao = Integer.parseInt(operacao);
-            }
 
-            // limpeza de buffer
-            leia.nextLine();
-
-        } while(opcao != 7);
+        } while(!operacao.equals("7"));
 
         // fecha objeto leia
         leia.close();
