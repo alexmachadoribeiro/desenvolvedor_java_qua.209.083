@@ -1,0 +1,75 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    margin: 30px 100px;
+}
+
+form {
+    margin: 50px 15px;
+}
+
+label, button {
+    display: block;
+}
+
+label {
+    margin: 5px 0px;
+}
+
+button {
+    margin: 50px 0px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #007700;
+    color: #FFFFFF;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: #FFFFFF;
+    color: #007700;
+    transition: 0.5s ease;
+}
+
+input, select {
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #007700;
+    transition: 0.5s ease;
+}
+
+input:focus, select:focus {
+    border-bottom: 2px solid #FF0000;
+    transition: 0.5s ease;
+}
+
+select {
+    background-color: #FFFFFF;
+}
+
+h1 {
+    color: #007700;
+    text-shadow: 1px 1px 1px #16161d;
+}
+
+.nome {
+    width: 500px;
+}
+
+.data-nascimento {
+    width: 200px;
+}
+
+.altura {
+    width: 75px;
+}
+
+.genero {
+    width: 250px;
+}
