@@ -46,7 +46,9 @@
     <!-- container -->
     <main class="container">
         <h1>Cadastro</h1>
+        <h3 class="mt-5">Dados do usuário</h3>
         <hr>
+        <!-- formulário -->
         <form class="mt-5">
             <div class="row">
                 <!-- nome -->
@@ -83,7 +85,91 @@
                         <option value="4">Não desejo informar</option>
                     </select>
                 </div>
+                <!-- e-mail -->
+                <div class="col-12 col-md-8 col-lg-9 mb-3">
+                    <label class="form-label">E-mail:</label>
+                    <input class="form-control" type="email" placeholder="usuario@servidor.com" aria-label="default input example">
+                </div>
+                <!-- telefone -->
+                <div class="col-12 col-md-4 col-lg-3 mb-3">
+                    <label class="form-label">Telefone:</label>
+                    <input class="form-control" type="tel" placeholder="(00) 90000-0000" aria-label="default input example">
+                </div>
+                <!-- nível de escolaridade -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Escolaridade:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Escolha uma opção...</option>
+                        <option value="1">Ensino Fundamental</option>
+                        <option value="2">Ensino Médio</option>
+                        <option value="3">Ensino Superior</option>
+                        <option value="4">Pós-graduação</option>
+                        <option value="5">Mestrado</option>
+                        <option value="6">Doutorado</option>
+                    </select>
+                </div>
+                <!-- profissão -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Profissão:</label>
+                    <input class="form-control" type="text" placeholder="Cargo que ocupa" aria-label="default input example">
+                </div>
+                <!-- salário -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Salário:</label>
+                    <input class="form-control" type="number" placeholder="R$" aria-label="default input example" step="100">
+                </div>
             </div>
+            <!-- fim da row -->
+
+            <h3 class="mt-5">Endereço</h3>
+            <hr>
+            <!-- row -->
+            <div class="row">
+                <!-- cep -->
+                <div class="col-12 col-md-4 col-lg-3 mb-3">
+                    <label class="form-label">CEP:</label>
+                    <input class="form-control" type="text" placeholder="00.000-00" aria-label="default input example">
+                </div>
+                <!-- uf -->
+                <div class="col-12 col-md-2 col-lg-1 mb-3">
+                    <label class="form-label">UF:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+                <!-- cidade -->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <label class="form-label">Cidade:</label>
+                    <input class="form-control" type="text" placeholder="Nome da cidade onde mora" aria-label="default input example">
+                </div>
+            </div>
+            <!-- fim da row -->
         </form>
     </main>
     <!-- fim do container -->
