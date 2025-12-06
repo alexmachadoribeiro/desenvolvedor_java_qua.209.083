@@ -1,27 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>You Cast Now</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <!-- TODO: atividade 07 -->
     <!-- menu superior -->
-    <nav></nav>
+    <header class="nav-borda">
+        <nav class="bg-dark menu-superior" data-bs-theme="dark">
+            <div class="logo">
+                <img src="img/youcastnow.png" alt="logo" class="logo">
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">STREAMING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">DISCOVER</a>
+                </li>
+                <li class="nav-item cast-now">
+                    <a class="nav-link" href="#">CAST NOW</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">
+                        <img src="img/user.png" alt="user" class="user">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <!-- conteúdo da página -->
     <main>
         <!-- menu lateral -->
-        <aside></aside>
+        <aside>
+            <div class="container">
+                <div class="row">
+                    <section class="col-12 d-flex justify-content-center">
+                        <div>
+                            <h3>Trending Casters</h3>
+                        </div>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col-12 d-flex justify-content-center">
+                        <img src="img/user.png" alt="user" class="caster">
+                        <span>User</span>
+                    </section>
+                    <section class="col-12 d-flex justify-content-center">
+                        <img src="img/user.png" alt="user" class="caster">
+                        <span>User</span>
+                    </section>
+                    <section class="col-12 d-flex justify-content-center">
+                        <img src="img/user.png" alt="user" class="caster">
+                        <span>User</span>
+                    </section>
+                    <section class="col-12 d-flex justify-content-center">
+                        <img src="img/user.png" alt="user" class="caster">
+                        <span>User</span>
+                    </section>
+                </div>
+            </div>
+        </aside>
         <!-- imagens dos vídeos -->
         <div class="container">
             <section class="row">
                 <!-- 4x figure por linha -->
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/#" alt="Vídeo" class="img-fluid">
+                    <img src="img/v1.webp" alt="Vídeo" class="img-fluid">
+                    <img src="img/user.png" alt="user" class="caster">
+                    <span>User</span>
+                </figure>
+                <figure class="col-12 col-md-6 col-lg-3 mt-3">
+                    <img src="img/v2.jpg" alt="Vídeo" class="img-fluid">
+                    <img src="img/user.png" alt="user" class="caster">
+                    <span>User</span>
+                </figure>
+                <figure class="col-12 col-md-6 col-lg-3 mt-3">
+                    <img src="img/v3.webp" alt="Vídeo" class="img-fluid">
+                    <img src="img/user.png" alt="user" class="caster">
+                    <span>User</span>
+                </figure>
+                <figure class="col-12 col-md-6 col-lg-3 mt-3">
+                    <img src="img/v4.jpeg" alt="Vídeo" class="img-fluid">
+                    <img src="img/user.png" alt="user" class="caster">
+                    <span>User</span>
+                </figure>
+                <figure class="col-12 col-md-6 col-lg-3 mt-3">
+                    <img src="img/v5.jpg" alt="Vídeo" class="img-fluid">
+                    <img src="img/user.png" alt="user" class="caster">
+                    <span>User</span>
+                </figure>
+                <figure class="col-12 col-md-6 col-lg-3 mt-3">
+                    <img src="img/v6.jpeg" alt="Vídeo" class="img-fluid">
+                    <img src="img/user.png" alt="user" class="caster">
+                    <span>User</span>
+                </figure>
+                <figure class="col-12 col-md-6 col-lg-3 mt-3">
+                    <img src="img/v7.jpg" alt="Vídeo" class="img-fluid">
+                    <img src="img/user.png" alt="user" class="caster">
+                    <span>User</span>
+                </figure>
+                <figure class="col-12 col-md-6 col-lg-3 mt-3">
+                    <img src="img/v8.jpg" alt="Vídeo" class="img-fluid">
+                    <img src="img/user.png" alt="user" class="caster">
+                    <span>User</span>
                 </figure>
             </section>
         </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

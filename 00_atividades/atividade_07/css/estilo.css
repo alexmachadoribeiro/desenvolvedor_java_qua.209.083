@@ -1,0 +1,61 @@
+.nav-borda {
+    background-image: linear-gradient(to right, #00FF00, #ff009d);
+    height: 95px;
+}
+
+.menu-superior {
+    height: 90px;
+    padding: 10px 20px;
+}
+
+.menu-superior li {
+    margin: 10px;
+}
+
+.menu-superior li a {
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo{
+    float: left;
+    margin: -9px -12px auto;
+}
+
+.cast-now {
+    font-style: italic;
+    background-color: #ff009d;
+}
+
+.caster, .user {
+    width: 56px;
+}
+
+.user {
+    margin: -15px;
+}
+
+.caster {
+    margin: 10px;
+}
+
+aside {
+    background-color: #EEEEEE;
+    width: 20%;
+    padding: 20px;
+    float:left;
+    height: 90vh;
+}
+
+h3 {
+    background-color: #007700;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+span {
+    margin-top: 20px;
+    font-weight: bolder;
+}
