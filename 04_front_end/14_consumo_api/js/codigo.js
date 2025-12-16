@@ -1,5 +1,6 @@
 const form = document.querySelector('form');
 const telefoneMask = document.querySelector('#telefone');
+const cpfMask = document.querySelector('#cpf');
 const cepMask = document.querySelector('#cep');
 const pesquisaCep = document.querySelector('#cep');
 
@@ -25,7 +26,57 @@ const meuCallback = (conteudo) => {
     }
 }
 
-// TODO: funções de máscara de entrada e função pesquisaCep
+telefoneMask.addEventListener('input', function() {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{2})(\d)/, '($1) $2')
+        .replace(/(\d{4,5})(\d)/, '$1-$2')
+        .replace(/(-\d{4})\d+?$/, '$1');
+});
+
+cepMask.addEventListener('input', function() {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{5})(\d)/, '$1-$2')
+        .replace(/(-\d{3})\d+?$/, '$1');
+});
+
+cpfMask.addEventListener('input', function() {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+});
+
+pesquisaCep.addEventListener('blur', function() {
+    let cep = document.querySelector('#cep').value.replace(/\D/g, '');
+
+    if (cep != '') {
+        let validarCep = /^[0-9]{8}$/;
+
+        if (validarCep.test(cep)) {
+            document.querySelector('#estado').value = "carregando...";
+            document.querySelector('#cidade').value = "carregando...";
+            document.querySelector('#bairro').value = "carregando...";
+            document.querySelector('#logradouro').value = "carregando...";
+            document.querySelector('#complemento').value = "carregando...";
+
+            let script = document.createElement('script');
+
+            script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meuCallback';
+
+            document.body.appendChild(script);
+        }
+        else {
+            limpaFormularioCep();
+            alert("Formato do CEP inválido.");
+        }
+    }
+    else {
+        limpaFormularioCep();
+    }
+});
 
 const exibirDados = () => {
     let nome = document.querySelector('#nome').value;
