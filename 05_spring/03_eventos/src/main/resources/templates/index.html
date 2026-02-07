@@ -29,7 +29,7 @@
               <div class="card-text">Data: <span th:text="${#temporals.format(evento.data, 'dd/MM/yyyy')}"></span>.</div>
               <div class="card-text">Hora: <span th:text="${evento.hora}"></span>.</div>
               <a th:href="@{/editarEvento/{id}(id=${evento.idEvento})}" class="card-link">Editar</a>
-              <a href="#" class="card-link">Excluir</a>
+              <a th:href="@{/confirmarExclusao/{id}(id=${evento.idEvento})}" class="card-link">Excluir</a>
             </div>
           </div>
         </div>
